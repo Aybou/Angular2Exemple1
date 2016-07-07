@@ -9,33 +9,48 @@
         </div>-->
         <div class="form-group">
             <label>nom :</label>
-            <input type="text" class="form-control" placeholder="Obligatoire"
-                 [(ngModel)]="enrClient.nom">
+            <input type="text" class="form-control" placeholder="Obligatoire" [(ngModel)]="enrClient.nom">
+            <!-- le lieur -->
         </div>
         <div class="form-group">
             <label for="prenom">Prénom :</label>
-            <input type="text" class="form-control"
-                 [(ngModel)]="enrClient.prenom">
+            <input type="text" class="form-control" [(ngModel)]="enrClient.prenom">
+            <!-- le lieur -->
         </div>
         <div class="form-group">
             <label for="age">Age :</label>
-            <input type="number" class="form-control"
-                 [(ngModel)]="enrClient.age">
+            <input type="number" class="form-control" [(ngModel)]="enrClient.age">
+            <!-- le lieur -->
+        </div>
+        <div class="form-group">
+            <label for="nombre_enfant">Nombre d'enfants :</label>
+            <input type="number" class="form-control" [(ngModel)]="enrClient.nombre_enfant">
+            <!-- le lieur -->
+        </div>
+        <div class="form-group">
+            <label for="profession">Profession :</label>
+            <input type="text" class="form-control" [(ngModel)]="enrClient.profession">
+            <!-- le lieur -->
+        </div>
+        <div class="form-group">
+            <label for="profession">Adresse :</label>
+            <input type="text" class="form-control" [(ngModel)]="enrClient.adresse">
+            <!-- le lieur -->
         </div>
         <div class="form-group">
             <label for="age">Caution :</label>
-            <input type="number" class="form-control"
-                 ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01"
-                 [(ngModel)]="enrClient.caution">
+            <input type="number" class="form-control" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" [(ngModel)]="enrClient.caution">
+            <!-- le lieur -->
         </div>
         <div>
             <button (click)="onSubmit()">Valider</button>
-            <button (click)="ajouterClient()" type="button" class="btn btn-default" >Nouveau client</button>
-            <button (click)="supprimerClient()" type="button" class="btn btn-default" >Supprimer</button>
+            <button (click)="ajouterClient()" type="button" class="btn btn-default">Nouveau client</button>
+            <button (click)="supprimerClient()" type="button" class="btn btn-default">Supprimer</button>
         </div>
         <div>
-            <button (click)="setPrecedent()" type="button" class="btn btn-default" >Rec</button>
-            <button (click)="setSuivant()" type="button" class="btn btn-default" >Suiv</button>
+            <button (click)="setPrecedent()" type="button" class="btn btn-default">Rec</button>
+            <button (click)="setSuivant()" type="button" class="btn btn-default">Suivant</button>
         </div>
+        <button (click)="supprimerTout()" type="button" class="btn btn-default">Supprimer tout</button>
     </div>
 </div>
